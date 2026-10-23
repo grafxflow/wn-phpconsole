@@ -1,0 +1,8 @@
+{
+    "name": "grafxflow/wn-phpconsole",
+    "type": "winter-plugin",
+    "description": "PHP Console plugin for Winter CMS",
+    "homepage": "https://github.com/grafxflow/wn-phpconsole",
+    "keywords": ["cms", "wintercms", "php", "phpconsole"],
+    "license": "MIT"
+}
