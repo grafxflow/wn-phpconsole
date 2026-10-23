@@ -2,9 +2,9 @@
 
 namespace Grafxflow\PhpConsole;
 
-use System\Classes\PluginBase;
 use Backend\Facades\Backend;
 use Backend\Models\UserRole;
+use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {

@@ -10,14 +10,15 @@ class ScriptsController extends Controller
 {
     public $implement = [
         'Backend\Behaviors\ListController',
-        'Backend\Behaviors\FormController'
+        'Backend\Behaviors\FormController',
     ];
 
     public $listConfig = 'config_list.yaml';
+
     public $formConfig = 'config_form.yaml';
 
     public $requiredPermissions = [
-        'grafxflow-phpconsole-usage'
+        'grafxflow-phpconsole-usage',
     ];
 
     public function __construct()
@@ -28,7 +29,7 @@ class ScriptsController extends Controller
         $this->addCss('/plugins/grafxflow/phpconsole/assets/css/style.css');
     }
 
-    public function onExecute()
+    public function onExecute(): void
     {
         $data = Input::all();
         $code = $data['Script']['code'];

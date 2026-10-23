@@ -8,9 +8,9 @@ use Winter\Storm\Database\Updates\Migration;
 
 class CreateScriptsTable extends Migration
 {
-    public function up()
+    public function up(): void
     {
-        Schema::create('grafxflow_phpconsole_scripts', function(Blueprint $table) {
+        Schema::create('grafxflow_phpconsole_scripts', function (Blueprint $table): void {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->string('title');
@@ -19,7 +19,7 @@ class CreateScriptsTable extends Migration
         });
     }
 
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('grafxflow_phpconsole_scripts');
     }

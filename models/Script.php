@@ -14,16 +14,6 @@ class Script extends Model
      */
     public $table = 'grafxflow_phpconsole_scripts';
 
-    /**
-     * @var array Guarded fields
-     */
-    protected $guarded = ['*'];
-
-    /**
-     * @var array Fillable fields
-     */
-    protected $fillable = [];
-
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -34,12 +24,30 @@ class Script extends Model
      * @var array Relations
      */
     public $hasOne = [];
+
     public $hasMany = [];
+
     public $belongsTo = [];
+
     public $belongsToMany = [];
+
     public $morphTo = [];
+
     public $morphOne = [];
+
     public $morphMany = [];
+
     public $attachOne = [];
+
     public $attachMany = [];
+
+    /**
+     * @var array Guarded fields
+     */
+    protected $guarded = ['*'];
+
+    /**
+     * @var array Fillable fields
+     */
+    protected $fillable = [];
 }
