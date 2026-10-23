@@ -8,14 +8,6 @@ use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {
-    public function registerComponents(): void
-    {
-    }
-
-    public function registerSettings(): void
-    {
-    }
-
     /**
      * {@inheritDoc}
      */
