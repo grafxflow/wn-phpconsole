@@ -3,8 +3,8 @@
 namespace Grafxflow\PhpConsole\Controllers;
 
 use Backend\Classes\Controller;
-use BackendMenu;
-use Input;
+use Backend\Facades\BackendMenu;
+use Winter\Storm\Support\Facades\Input;
 
 class ScriptsController extends Controller
 {
