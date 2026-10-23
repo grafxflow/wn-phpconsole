@@ -26,7 +26,7 @@ class Plugin extends PluginBase
             'description' => 'rv.phpconsole::lang.plugin.description',
             'author' => 'RV',
             'icon' => 'oc-icon-terminal',
-            'homepage' => '',
+            'homepage' => 'https://github.com/grafxflow/wn-phpconsole',
         ];
     }
 
