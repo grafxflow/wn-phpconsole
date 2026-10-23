@@ -21,7 +21,7 @@ Amend the following in the root **composer.json**.
 Then run the following:
 
 ```
-composer update grafxflow/wn-phpconsole
+composer require grafxflow/wn-phpconsole
 ```
 
 ```
