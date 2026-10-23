@@ -1,7 +1,9 @@
-<?php return [
+<?php
+
+return [
     'plugin' => [
         'name' => 'PHP Sandbox',
-        'description' => 'PHP Sandbox for October CMS.',
+        'description' => 'PHP Sandbox for Winter CMS.',
     ],
     'permissions' => [
         'usage' => 'Using PHP Sandbox',

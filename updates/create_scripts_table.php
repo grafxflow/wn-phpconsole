@@ -1,8 +1,10 @@
-<?php namespace RV\PhpConsole\Updates;
+<?php
+
+namespace RV\PhpConsole\Updates;
 
 use Schema;
-use October\Rain\Database\Schema\Blueprint;
-use October\Rain\Database\Updates\Migration;
+use Winter\Storm\Database\Schema\Blueprint;
+use Winter\Storm\Database\Updates\Migration;
 
 class CreateScriptsTable extends Migration
 {

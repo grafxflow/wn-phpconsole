@@ -3,3 +3,5 @@
     - create_scripts_table.php
 1.0.0:
     - '1st stable version'
+1.0.1:
+    - 'Migrated to Winter CMS'

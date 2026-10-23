@@ -1,4 +1,6 @@
-<?php namespace RV\PhpConsole\Controllers;
+<?php
+
+namespace RV\PhpConsole\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;

@@ -1,7 +1,9 @@
-<?php return [
+<?php
+
+return [
     'plugin' => [
         'name' => 'PHP Sandbox',
-        'description' => 'PHP песочница для October CMS',
+        'description' => 'PHP песочница для Winter CMS',
     ],
     'permissions' => [
         'usage' => 'Использование PHP песочницы',

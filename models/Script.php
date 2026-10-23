@@ -1,4 +1,6 @@
-<?php namespace RV\PhpConsole\Models;
+<?php
+
+namespace RV\PhpConsole\Models;
 
 use Model;
 
