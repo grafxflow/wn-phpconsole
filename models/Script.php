@@ -2,7 +2,7 @@
 
 namespace Grafxflow\PhpConsole\Models;
 
-use Model;
+use Winter\Storm\Database\Model;
 
 /**
  * Script Model

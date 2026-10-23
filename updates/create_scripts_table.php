@@ -2,9 +2,9 @@
 
 namespace Grafxflow\PhpConsole\Updates;
 
-use Winter\Storm\Support\Facades\Schema;
 use Winter\Storm\Database\Schema\Blueprint;
 use Winter\Storm\Database\Updates\Migration;
+use Winter\Storm\Support\Facades\Schema;
 
 class CreateScriptsTable extends Migration
 {
