@@ -29,3 +29,10 @@ php artisan migrate
 ```
 
 ### Version:
+* 0.1.0:
+    - 'Create scripts model'
+    - create_scripts_table.php
+* 1.0.0:
+    - '1st stable version'
+* 1.0.1:
+    - 'Migrated to Winter CMS'
