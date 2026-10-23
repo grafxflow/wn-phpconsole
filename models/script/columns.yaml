@@ -4,11 +4,11 @@
 
 columns:
     title:
-        label: 'rv.phpconsole::lang.models.script.title'
+        label: 'grafxflow.phpconsole::lang.models.script.title'
         type: text
         searchable: true
         sortable: true
     description:
-        label: 'rv.phpconsole::lang.models.script.description'
+        label: 'grafxflow.phpconsole::lang.models.script.description'
         type: text
         searchable: false

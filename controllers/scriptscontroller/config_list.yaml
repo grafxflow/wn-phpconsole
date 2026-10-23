@@ -1,6 +1,6 @@
-list: $/rv/phpconsole/models/script/columns.yaml
-modelClass: RV\PhpConsole\Models\Script
-title: 'rv.phpconsole::lang.controllers.scripts'
+list: $/grafxflow/phpconsole/models/script/columns.yaml
+modelClass: Grafxflow\PhpConsole\Models\Script
+title: 'grafxflow.phpconsole::lang.controllers.scripts'
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'rv/phpconsole/scriptscontroller/update/:id'
+recordUrl: 'grafxflow/phpconsole/scriptscontroller/update/:id'

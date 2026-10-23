@@ -1,6 +1,6 @@
 <?php
 
-namespace RV\PhpConsole\Models;
+namespace Grafxflow\PhpConsole\Models;
 
 use Model;
 
@@ -12,7 +12,7 @@ class Script extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rv_phpconsole_scripts';
+    public $table = 'grafxflow_phpconsole_scripts';
 
     /**
      * @var array Guarded fields

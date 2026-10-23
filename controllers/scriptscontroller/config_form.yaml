@@ -1,10 +1,10 @@
-name: 'rv.phpconsole::lang.controllers.scripts'
-form: $/rv/phpconsole/models/script/fields.yaml
-modelClass: RV\PhpConsole\Models\Script
-defaultRedirect: rv/phpconsole/scriptscontroller
+name: 'grafxflow.phpconsole::lang.controllers.scripts'
+form: $/grafxflow/phpconsole/models/script/fields.yaml
+modelClass: Grafxflow\PhpConsole\Models\Script
+defaultRedirect: grafxflow/phpconsole/scriptscontroller
 create:
-    redirect: 'rv/phpconsole/scriptscontroller/update/:id'
-    redirectClose: rv/phpconsole/scriptscontroller
+    redirect: 'grafxflow/phpconsole/scriptscontroller/update/:id'
+    redirectClose: grafxflow/phpconsole/scriptscontroller
 update:
-    redirect: rv/phpconsole/scriptscontroller
-    redirectClose: rv/phpconsole/scriptscontroller
+    redirect: grafxflow/phpconsole/scriptscontroller
+    redirectClose: grafxflow/phpconsole/scriptscontroller

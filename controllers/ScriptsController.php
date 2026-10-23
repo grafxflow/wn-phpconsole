@@ -1,6 +1,6 @@
 <?php
 
-namespace RV\PhpConsole\Controllers;
+namespace Grafxflow\PhpConsole\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
@@ -17,15 +17,15 @@ class ScriptsController extends Controller
     public $formConfig = 'config_form.yaml';
 
     public $requiredPermissions = [
-        'rv-phpconsole-usage'
+        'grafxflow-phpconsole-usage'
     ];
 
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('RV.PhpConsole', 'rv-phpconsole-menu');
+        BackendMenu::setContext('Grafxflow.PhpConsole', 'grafxflow-phpconsole-menu');
 
-        $this->addCss('/plugins/rv/phpconsole/assets/css/style.css');
+        $this->addCss('/plugins/grafxflow/phpconsole/assets/css/style.css');
     }
 
     public function onExecute()

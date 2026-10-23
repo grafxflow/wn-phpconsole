@@ -1,6 +1,6 @@
 <?php
 
-namespace RV\PhpConsole;
+namespace Grafxflow\PhpConsole;
 
 use System\Classes\PluginBase;
 use Backend\Facades\Backend;
@@ -22,9 +22,9 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'rv.phpconsole::lang.plugin.name',
-            'description' => 'rv.phpconsole::lang.plugin.description',
-            'author' => 'RV',
+            'name' => 'grafxflow.phpconsole::lang.plugin.name',
+            'description' => 'grafxflow.phpconsole::lang.plugin.description',
+            'author' => 'Grafxflow',
             'icon' => 'oc-icon-terminal',
             'homepage' => 'https://github.com/grafxflow/wn-phpconsole',
         ];
@@ -36,9 +36,9 @@ class Plugin extends PluginBase
     public function registerPermissions(): array
     {
         return [
-            'rv.phpconsole.usage'  => [
-                'tab' => 'rv.phpconsole::lang.permissions.usage',
-                'label' => 'rv.phpconsole::lang.permissions.usage',
+            'grafxflow.phpconsole.usage'  => [
+                'tab' => 'grafxflow.phpconsole::lang.permissions.usage',
+                'label' => 'grafxflow.phpconsole::lang.permissions.usage',
                 'roles' => [UserRole::CODE_DEVELOPER],
             ],
         ];
@@ -51,11 +51,11 @@ class Plugin extends PluginBase
     {
         return [
             'pages' => [
-                'label' => 'rv.phpconsole::lang.plugin.name',
-                'url' => Backend::url('rv/phpconsole/scriptscontroller'),
+                'label' => 'grafxflow.phpconsole::lang.plugin.name',
+                'url' => Backend::url('grafxflow/phpconsole/scriptscontroller'),
                 'icon' => 'icon-terminal',
-                'iconSvg' => 'plugins/rv/phpconsole/assets/images/php-file.svg',
-                'permissions' => ['rv.phpconsole.usage'],
+                'iconSvg' => 'plugins/grafxflow/phpconsole/assets/images/php-file.svg',
+                'permissions' => ['grafxflow.phpconsole.usage'],
                 'order' => 200,
             ],
         ];

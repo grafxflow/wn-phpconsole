@@ -1,6 +1,6 @@
 <?php
 
-namespace RV\PhpConsole\Updates;
+namespace Grafxflow\PhpConsole\Updates;
 
 use Schema;
 use Winter\Storm\Database\Schema\Blueprint;
@@ -10,7 +10,7 @@ class CreateScriptsTable extends Migration
 {
     public function up()
     {
-        Schema::create('rv_phpconsole_scripts', function(Blueprint $table) {
+        Schema::create('grafxflow_phpconsole_scripts', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->string('title');
@@ -21,6 +21,6 @@ class CreateScriptsTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('rv_phpconsole_scripts');
+        Schema::dropIfExists('grafxflow_phpconsole_scripts');
     }
 }

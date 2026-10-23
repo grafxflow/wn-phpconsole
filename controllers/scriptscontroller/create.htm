@@ -1,7 +1,13 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('rv/phpconsole/scriptscontroller') ?>"><?= e(trans('rv.phpconsole::lang.controllers.scripts')) ?></a></li>
-        <li><?= e($this->pageTitle) ?></li>
+        <li>
+            <a href="<?= Backend::url('grafxflow/phpconsole/scriptscontroller') ?>">
+                <?= e(trans('grafxflow.phpconsole::lang.controllers.scripts')) ?>
+            </a>
+        </li>
+        <li>
+            <?= e($this->pageTitle) ?>
+        </li>
     </ul>
 <?php Block::endPut() ?>
 
@@ -20,7 +26,8 @@
                     data-request="onSave"
                     data-hotkey="ctrl+s, cmd+s"
                     data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
-                    class="btn btn-primary">
+                    class="btn btn-primary"
+                >
                     <?= e(trans('backend::lang.form.create')) ?>
                 </button>
                 <button
@@ -34,9 +41,10 @@
                         },500);"
                     data-request-update="output: '#phpConsole_output'"
                     data-hotkey="ctrl+e, cmd+e"
-                    data-load-indicator="<?= e(trans('rv.phpconsole::lang.controllers.execution')) ?>"
-                    class="oc-icon-play btn btn-success">
-                    <?= e(trans('rv.phpconsole::lang.controllers.execute')) ?>
+                    data-load-indicator="<?= e(trans('grafxflow.phpconsole::lang.controllers.execution')) ?>"
+                    class="oc-icon-play btn btn-success"
+                >
+                    <?= e(trans('grafxflow.phpconsole::lang.controllers.execute')) ?>
                 </button>
                 <button
                     type="button"
@@ -44,23 +52,35 @@
                     data-request-data="close:1"
                     data-hotkey="ctrl+enter, cmd+enter"
                     data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
-                    class="btn btn-default">
+                    class="btn btn-default"
+                >
                     <?= e(trans('backend::lang.form.create_and_close')) ?>
                 </button>
                 <span class="btn-text">
-                    <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('rv/phpconsole/scriptscontroller') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
+                    <?= e(trans('backend::lang.form.or')) ?>
+                    <a href="<?= Backend::url('grafxflow/phpconsole/scriptscontroller') ?>">
+                        <?= e(trans('backend::lang.form.cancel')) ?>
+                    </a>
                 </span>
             </div>
         </div>
 
         <div id="phpConsole_outputWrapper" style="display:none;">
-            <p><?= e(trans('rv.phpconsole::lang.controllers.output')) ?></p>
+            <p>
+                <?= e(trans('grafxflow.phpconsole::lang.controllers.output')) ?>
+            </p>
             <pre id="phpConsole_output"></pre>
         </div>
 
     <?= Form::close() ?>
 
 <?php else: ?>
-    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
-    <p><a href="<?= Backend::url('rv/phpconsole/scriptscontroller') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+    <p class="flash-message static error">
+        <?= e(trans($this->fatalError)) ?>
+    </p>
+    <p>
+        <a href="<?= Backend::url('grafxflow/phpconsole/scriptscontroller') ?>" class="btn btn-default">
+            <?= e(trans('backend::lang.form.return_to_list')) ?>
+        </a>
+    </p>
 <?php endif ?>
